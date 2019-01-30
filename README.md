@@ -2,7 +2,11 @@
 
 Boilerplate made by following this [article].(https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c).
 
-#### Basic recipe
+#### Use
 
 1. `npm install`
-2. To run: `npm start && npm run electron`
+2. To run: `npm run electron-dev` (dev) or `npm run build && npm run electron` (production).
+
+#### Notes
+
+- `cross-env` module is used in order to add support for both Windows and Linux enviroment variables (ELECTRON_START_URL).
